@@ -14,7 +14,7 @@ def main():
     n = 10 ** 9
     init_config = {a: 0.501 * n, b: 0.499 * n}
     sim = Simulation(init_config, approximate_majority_symmetric)
-    sim.run()
+    sim.run(10, 0.1)
     print(sim.history)
     sim.history.plot()
     plt.title('approximate majority protocol')
